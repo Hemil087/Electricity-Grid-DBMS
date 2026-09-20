@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name : electricity_grid_db
+    ports:
+      - "5432:5432"
+    environment:
+        POSTGRES_DB: electricity_grid
+        POSTGRES_USER: grid_admin
+        POSTGRES_PASSWORD: grid_pass
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U grid_admin -d electricity_grid"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+volumes:
+  pgdata:
