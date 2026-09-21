@@ -1,1 +1,6 @@
 psycopg2-binary==2.9.9
+jupyterlab
+pandas 
+matplotlib 
+seaborn 
+scipy
