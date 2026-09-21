@@ -17,7 +17,7 @@ This is a Database Management System project for managing data related to an ele
 - ✅ DDL Scripts (`/DDL/DDL_v2.pdf`)
 - ✅ Relational Schema Diagram (`/RelationalModel/RelationalModel_v2.pdf`)
 - ✅ SQL Queries (`/Queries/Queries_v2.pdf`)
-- ✅ Java API Snippet (`/Code/DBMS_API_Code.java`)
+- ✅ python interface 
 
 ## Tools Used
 - PostgreSQL for database schema and queries
